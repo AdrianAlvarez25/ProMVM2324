@@ -63,24 +63,93 @@ public class Bola{
         return posY;
     }
 }
-#seta es la clase de la bola especial q suele salir
+
+// -------------------------- BOLA ESPECIAL ---------------------------------
+
+// aixo es la classe de la bola especial
 public class BolaEspecial{
+    private int posX;
+    private int posY;
+    public BolaEspecial(int posX, int posY){
+        this.posX = posX;
+        this.posY = posY;
+    }
+    public int getPosX(){
+        return posX;
+    }
+    public int getPosY(){
+        return posY;
+    }
+    public void activarEfecte(){
 
+    }
 }
 
-#esta es la clase de la fruta
+// --------------------------- FRUITA -------------------------------
 public class Fruita{
+    private String nom;
+    private int posX;
+    private int posY;
 
+    public Fruita(String nom, int posX, int posY){
+        this.nom = nom;
+        this.posX = posX;
+        this.posY = posY;
+    }
+    public String getNom(){
+        return nom;
+    }
+    public int getPosX(){
+        return posX;
+    }
+    public int getPosY(){
+        return posY;
+    }
 }
-#esta es la clase del laberinto
+// ---------------------------- LABERINTO ---------------------------------
 public class Laberinto{
-
+    private char[][] estructuraLaberinto;
+    public Laberinto(int numFilas, int numColumnes){
+        this.estructuraLaberinto = new char [numFilas][numColumnes];
+    }
+    public char[][]
+    getEstructuraLaberinto(){
+        return estructuraLaberinto;
+    }
+    public char obtenirContingutCaseta(int fila, int columna){
+        return estructuraLaberinto[fila][columna];
+    }
+    public void
+    definirContingutCaseta(int fila, int columna, char contingut){
+        estructuraLaberinto[fila][columna] = contingut;
+    }
 }
-#esta es la clase de los pasadizos
+// -------------------------- PASSADIS --------------------------------
 public class Passadis{
-
+    private char caracterPared;
+    private char caracterPassadis;
+    public Passadis(char caracterPared, char caracterPassadis){
+        this.caracterPared = caracterPared = caracterPared;
+        this.caracterPassadis = caracterPassadis;
+    }
+    public boolean esPassadis(char c){
+        return c == caracterPassadis;
+    }
 }
-#esta es la clase de la casa de los fantasmas rivales
+// -------------------------- FANTASMAS -----------------------------------------
 public class Fantasmitas{
-
+    private int posX;
+    private int posY;
+    public CasaFantasmes(int posX, int posY){
+        this.posX = posX;
+        this.posY = posY;
+    }
+    public int getPosX(){
+        return posX;
+    }
+    public int getPosY(){
+        return posY;
+    }
+    public void reiniciarPosicio(){
+    }
 }
