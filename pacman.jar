@@ -1,11 +1,40 @@
+package Pacman;
+
+
+#esta es la clase de pacman
 public class Pacman {
     public static void main(String[] args) {
-        
-
-
+        Joc ob = new Joc();
     }
+}
+#esta se la clase del fantasma
+public class Fantasma {
+    public Joc(){
 
+        
+    }
+}
+#esta es la clase de la bola
+public class Bola{
 
+}
+#seta es la clase de la bola especial q suele salir
+public class BolaRandom{
 
+}
+#esta es la clase de la fruta
+public class Fruita{
 
+}
+#esta es la clase del laberinto
+public class Laberinto{
+
+}
+#esta es la clase de los pasadizos
+public class Passadis{
+
+}
+#esta es la clase de la casa de los fantasmas rivales
+public class Fantasmitas{
+    
 }
