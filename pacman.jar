@@ -3,23 +3,22 @@ package Pacman;
 
 #esta es la clase de pacman
 public class Pacman {
-    public static void main(String[] args) {
-        Joc ob = new Joc();
-    }
+    move(int newPosX, int newPosY) #aixo es per moure al Pacman a una nova posició
+    pickupBola() #aixo es per recollir una bola i augmentar la puntuacio
+    pickupBolaEspecial() #aixo es per recollir una bola especial que li donara un boost al pacman
+    loseLife()#aixo es que quan a pacman el captura un fantasma perd una vida
+    detectColisionFantasma(Fantasma a fantasma)#aixo es per verificar si pacman choca amb un fantasma
 }
 #esta se la clase del fantasma
 public class Fantasma {
-    public Joc(){
 
-        
-    }
 }
 #esta es la clase de la bola
 public class Bola{
 
 }
 #seta es la clase de la bola especial q suele salir
-public class BolaRandom{
+public class BolaEspecial{
 
 }
 #esta es la clase de la fruta
@@ -36,5 +35,5 @@ public class Passadis{
 }
 #esta es la clase de la casa de los fantasmas rivales
 public class Fantasmitas{
-    
+
 }
