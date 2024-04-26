@@ -1,7 +1,9 @@
 package Pacman;
 
 
-// aquesta es la clase de pacman
+// --------------------------- PACMAN -------------------------
+
+// aquesta es la classe del pacman
 public class Pacman {
 // aquests son els atributs d'aquesta classe.
     private int posX;
@@ -21,9 +23,21 @@ public void move(int newPosX, int newPosY){
     this.posX = newPosX;
     this.posY = newPosY;
 }
-#esta se la clase del fantasma
-public class Fantasma {
+// -------------------------- FANTASMA -------------------------
 
+// aquesta es la classe del fantasma
+public class Fantasma {
+    private int posX;
+    private int posY;
+}
+// aquest es el contructor del fantasma
+public Fantasma(int newPosX, int newPosY){
+    this.posX = posX;
+    this.posY = posY;
+}
+public void move(int newPosX, int newPosY){
+    this.posX = newPosX;
+    this.posY = newPosY;
 }
 #esta es la clase de la bola
 public class Bola{
