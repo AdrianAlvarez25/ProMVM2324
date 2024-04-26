@@ -10,18 +10,19 @@ public class Pacman {
     private int posX;
     private int puntuacio;
     private int vides;
-}
+
 // aixo es el constructor, serveix per iniciar els objectes d'aquesta classe.
-public Pacman(int posX, int posY, int vides) {
-    this.posX = posX;
-    this.posY = posY;
-    this.puntuacio = 0;
-    this.vides = vides;
-}
+    public Pacman(int posX, int posY, int vides) {
+        this.posX = posX;
+        this.posY = posY;
+        this.puntuacio = 0;
+        this.vides = vides;
+    }
 // aixo es el metode que fa que el Pacman es mogui
-public void move(int newPosX, int newPosY){
-    this.posX = newPosX;
-    this.posY = newPosY;
+    public void move(int newPosX, int newPosY){
+        this.posX = newPosX;
+        this.posY = newPosY;
+    }
 }
 // -------------------------- FANTASMA -------------------------
 
@@ -29,24 +30,44 @@ public void move(int newPosX, int newPosY){
 public class Fantasma {
     private int posX;
     private int posY;
-}
-// aquest es el contructor del fantasma
-public Fantasma(int newPosX, int newPosY){
-    this.posX = posX;
-    this.posY = posY;
-}
-public void move(int newPosX, int newPosY){
-    this.posX = newPosX;
-    this.posY = newPosY;
-}
-#esta es la clase de la bola
-public class Bola{
 
+// aquest es el contructor del fantasma
+    public Fantasma(int newPosX, int newPosY){
+        this.posX = posX;
+        this.posY = posY;
+    }
+    public void move(int newPosX, int newPosY){
+        this.posX = newPosX;
+        this.posY = newPosY;
+    }
+}
+// --------------------------- BOLA ----------------------------------
+
+// aquesta es la classe per les boles
+public class Bola{
+    private int posX;
+    private int posY;
+
+
+// aixo es el constructor per la bola
+    public Bola(int posX, int posY){
+        this.posX = posX;
+        this.posY = posY;
+    }
+// aixo es per obtenir una posicio de la bola
+    public int getPosX(){
+        return posX;
+    }
+// i aixo es per obtenir altra posicio
+    public int getPosY(){
+        return posY;
+    }
 }
 #seta es la clase de la bola especial q suele salir
 public class BolaEspecial{
 
 }
+
 #esta es la clase de la fruta
 public class Fruita{
 
