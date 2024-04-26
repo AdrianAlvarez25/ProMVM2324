@@ -1,13 +1,25 @@
 package Pacman;
 
 
-#esta es la clase de pacman
+// aquesta es la clase de pacman
 public class Pacman {
-    move(int newPosX, int newPosY) #aixo es per moure al Pacman a una nova posició
-    pickupBola() #aixo es per recollir una bola i augmentar la puntuacio
-    pickupBolaEspecial() #aixo es per recollir una bola especial que li donara un boost al pacman
-    loseLife()#aixo es que quan a pacman el captura un fantasma perd una vida
-    detectColisionFantasma(Fantasma a fantasma)#aixo es per verificar si pacman choca amb un fantasma
+// aquests son els atributs d'aquesta classe.
+    private int posX;
+    private int posX;
+    private int puntuacio;
+    private int vides;
+}
+// aixo es el constructor, serveix per iniciar els objectes d'aquesta classe.
+public Pacman(int posX, int posY, int vides) {
+    this.posX = posX;
+    this.posY = posY;
+    this.puntuacio = 0;
+    this.vides = vides;
+}
+// aixo es el metode que fa que el Pacman es mogui
+public void move(int newPosX, int newPosY){
+    this.posX = newPosX;
+    this.posY = newPosY;
 }
 #esta se la clase del fantasma
 public class Fantasma {
